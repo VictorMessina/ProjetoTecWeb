@@ -1,71 +1,49 @@
 body{
-	font-family: "Britanic Bold";
-	font-size:14pt;
-	margin:0px;
-	background-color:#6B0000;
-	color:#000;
-	clear:left;
+    margin:0px;
+    background-color:#FCFCFA;
 }
 
 header{
-	background-color:#fff;
-	height:2000px;
-	
-	margin-top:0px;
+    background-color:#3B5998;
+    height:120px;
+    margin-top:-68px;
+    color:white;
+}   
+
+#logo{
+    height:100px;
+    margin-top:-300px;
+    margin-left:350px;
 }
 
+h1{
+    font-family:"arial";
+    font-size:100px;
+    margin-left: 180px;
+}
 
+div{
+    margin-top:-120px;
+    float:right;
+    margin-left:200px;
+}
 
+#birds{
+   height:500px; 
+   margin-left:120px;
+   margin-top:70px;
+   width:1000px;
+}
 
 section{
-	background-color:#fff;
-	text-align:center;
-	border-radius:100px 100px 100px 100px;
-	margin-left:auto;
-	margin-right:auto;
-	
+    margin-left:1300px;
+    margin-top:-450px;
 }
 
-#form{
-	text-align: center;
-	padding: 20px 20px 10px 50px;
-	background-image:url("img/seg2.jpg");
-	background-attachment:fixed;
-	margin: 0px 15% 0px 15%;
-	
-}
-
-#form h3{
-	text-align:center;
-}
-
-
-#relogio{
-	width:100px;
-	height:30px;
-	color:#000;
-	text-align: center;
-	font-size:20pt;
-	float:clear;
-	padding-top:20px;
-	
-}
-
-section p{
-	text-align: right;
-	
-}
-			
-#formulario{
-	font-size:18pt;
-	background-image:url("img/form.jpg");
-	height:200px;
-}
 footer{
-	background-color:#202020;
-	color:#fff;
-	padding:10px;
-	font-size:12px;
-	text-align:center;
-	clear:left;
+    background-color:#202020;
+    color:white;
+    height:35px;
+    font-size:20px;
+    text-align:center;         
 }

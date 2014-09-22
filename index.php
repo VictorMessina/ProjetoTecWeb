@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -8,7 +7,8 @@
 		<meta name="descripition" content="Formulário"/>
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
 		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
-			<script type="text/javascript">
+			
+                    <script type="text/javascript">
 			var tempoP=0;
 			
 			setInterval(trocaHora,1000);
@@ -28,22 +28,26 @@
 				document.getElementById("relogio").innerHTML = texto;
 			}
 			
-		</script>
+		    </script>
 	</head>
 	
 	<body>
 		
 		<header id="formulario">
-			<img alt="logo" src="imagensSite/mackenzie.jpg"/>
-			
-			
-			<input type="email" placeholder="E-mail" name="campoemail"/> 
-			<input type="password" placeholder="Senha" name="camposenha"/>
-			<input type="submit" value="Entrar"/>
-			<br/>
+                    <h1> The North's Birds </h1>
+                    
+                    <div>
+                        <input type="email" placeholder="E-mail" name="campoemail"/> 
+		        <input type="password" placeholder="Senha" name="camposenha"/>
+		        <input type="submit" value="Entrar"/>
+                    <div>
+                        <br/>
 			<br/>
 		</header>
-		<p id="relogio">00:00</p>
+            
+                <img alt="birds" src="imagensSite/birds.gif" id='birds'/>
+            
+		
 		<section id="form">
 			
 			<form>
@@ -160,8 +164,10 @@
 			
 		</section>
 		
-		<br/><footer>
-		<small>Copyright &copy; MackOnline 2014</small>
+		<br/>
+                
+                <footer>
+		    <p>Copyright &copy; MackOnline 2014</p>
 		</footer>
 	
 	</body>
