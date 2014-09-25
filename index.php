@@ -34,8 +34,8 @@
 	<body>
 		
 		<header id="formulario">
-                    <h1> The North's Birds </h1>
-                    
+                
+                <form action = "confirmar_login.php" method = "post">    
                     <div>
                         <input type="email" placeholder="E-mail" name="campoemail"/> 
 		        <input type="password" placeholder="Senha" name="camposenha"/>
@@ -43,14 +43,17 @@
                     <div>
                         <br/>
 			<br/>
+                </form>
+                    
 		</header>
+            
             
                 <img alt="birds" src="imagensSite/birds.gif" id='birds'/>
             
 		
 		<section id="form">
 			
-			<form>
+			<form method="post" action="cadastro.php">
 				<h3>Ainda não possui uma conta? Cadastre-se!</h3> <br/>
 				<input type="text" placeholder="TIA" name="tia" /><br/><br/>
 				<input type="text" placeholder="Nome" name="camponome" />   <input type="text" placeholder="Sobrenome" name="campoSobrenome" /> <br/>
@@ -159,7 +162,8 @@
 				<input type="radio" name="sexo" value="F"/>Feminino<br/>
 				<br/>
 				
-				<input type="submit" value="Abrir conta"/><br/>
+				<input type="submit" id="btnSubmit" value="Abrir conta"/><br/>
+                                
 			</form>
 			
 		</section>

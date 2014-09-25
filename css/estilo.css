@@ -4,8 +4,8 @@ body{
 }
 
 header{
-    background-color:#3B5998;
-    height:120px;
+    background-color:#6B0000;
+    height:200px;
     margin-top:-68px;
     color:white;
 }   
@@ -23,7 +23,7 @@ h1{
 }
 
 div{
-    margin-top:-120px;
+    margin-top:120px;
     float:right;
     margin-left:200px;
 }
@@ -31,13 +31,13 @@ div{
 #birds{
    height:500px; 
    margin-left:120px;
-   margin-top:70px;
+   margin-top:-50px;
    width:1000px;
 }
 
 section{
     margin-left:1300px;
-    margin-top:-450px;
+    margin-top:-550px;
 }
 
 footer{
@@ -45,5 +45,6 @@ footer{
     color:white;
     height:35px;
     font-size:20px;
-    text-align:center;         
+    text-align:center;
+    margin-top: 200px;
 }
