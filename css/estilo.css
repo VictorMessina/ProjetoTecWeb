@@ -22,6 +22,11 @@ h1{
     margin-left: 180px;
 }
 
+#form{
+    font-family:"arial";
+    text-align: center;
+}
+
 div{
     margin-top:120px;
     float:right;
@@ -29,10 +34,10 @@ div{
 }
 
 #birds{
-   height:500px; 
+   height:400px; 
    margin-left:120px;
    margin-top:-50px;
-   width:1000px;
+   width:800px;
 }
 
 section{
@@ -46,5 +51,5 @@ footer{
     height:35px;
     font-size:20px;
     text-align:center;
-    margin-top: 200px;
+    margin-top:388px;
 }

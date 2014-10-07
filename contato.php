@@ -6,12 +6,11 @@
 		<meta charset="utf-8"/>
 		<meta name="descripition" content="Formulário"/>
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
+                <link rel="stylesheet" type="text/css" href="css/contato.css"/>
 		
 	</head>
 	
-	<body>
-        
-            <header id="formulario">
+	<body id="formulario">
                 <img alt="logo" src="imagensSite/mackenzie.jpg"/>
 				
 		<h1>Contato</h1><br/>
@@ -31,7 +30,6 @@
                             <input type="submit" value="Enviar"/><br/>
                 </form>
                 <br/><br/><a href="perfil.php" style="text-decoration:none; color:#000;">Voltar</a>
-            </header>
 		
 		<br/><footer>
 		<small>Copyright &copy; The North's Birds 2014</small>
