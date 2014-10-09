@@ -11,6 +11,7 @@
 	</head>
 	
 	<body>
+            <?php include 'validaCadastro.php';?>
 	
 			<form id="form" method="post" action="perfil.php">
                             
@@ -19,7 +20,7 @@
 				<br/>
 				<input type="email" placeholder="E-mail" name="campoemail"/> <br/>
 				<br/>
-				<input type="password" placeholder="Criar senha" name="camposenha"/><h4>*A senha deve possuir de 4 à 6 dígitos, entre números e letras.</h4>
+				<input type="password" placeholder="Criar senha" name="camposenha"/><h4>*A senha deve possuir 6 dígitos, entre números e letras.</h4>
 				<br/>
 				Data de nascimento<br/>
 				<select name="dia">
