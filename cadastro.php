@@ -15,12 +15,12 @@
 	
 			<form id="form" method="post" action="perfil.php">
                             
-				<input type="text" placeholder="TIA" name="tia" /><br/><br/>
-				<input type="text" placeholder="Nome" name="camponome" />   <input type="text" placeholder="Sobrenome" name="campoSobrenome" /> <br/>
+                            <input type="text" placeholder="TIA" name="tia" required /><br/><br/>
+                            <input type="text" placeholder="Nome" name="camponome" required />   <input type="text" placeholder="Sobrenome" name="campoSobrenome" required /> <br/>
 				<br/>
-				<input type="email" placeholder="E-mail" name="campoemail"/> <br/>
+                                <input type="email" placeholder="E-mail" name="campoemail" required/> <br/>
 				<br/>
-				<input type="password" placeholder="Criar senha" name="camposenha"/><h4>*A senha deve possuir 6 dígitos, entre números e letras.</h4>
+                                <input type="password" placeholder="Criar senha" name="camposenha" required/><h4>*A senha deve possuir 6 dígitos, entre números e letras.</h4>
 				<br/>
 				Data de nascimento<br/>
 				<select name="dia">

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<link rel="shortcut icon" type="image/x-icon" href="imagensSite/logo.png"/>
-		<title><?php echo $_POST["camponome"];?></title>
+		<title>Perfil</title>
 		<meta charset="utf-8"/>
 		<meta name="descripition" content="Formulário"/>
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>

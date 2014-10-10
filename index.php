@@ -35,7 +35,7 @@
 		
 		<header id="formulario">
                 
-                <form action = "confirmarLogin.php" method = "post">    
+                <form action = "login.php" method = "post">    
                     <div>
                         <input type="email" placeholder="E-mail" name="campoemail" /> 
 		        <input type="password" placeholder="Senha" name="camposenha"/>
