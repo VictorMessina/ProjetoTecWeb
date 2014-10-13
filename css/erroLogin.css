@@ -1,0 +1,23 @@
+body{
+    background-color:#6B0000;
+    font-family: "arial";
+}
+
+footer{
+    background-color:#202020;
+    color:white;
+    height:35px;
+    font-size:20px;
+    text-align:center;
+    margin-top: 296px;
+}
+
+#mackenzie{
+     margin-top: 0px;
+     margin-left:340px;
+}
+
+div{
+    text-align: center;
+    margin-top: 150px;
+}
