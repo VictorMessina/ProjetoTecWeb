@@ -10,6 +10,11 @@
 	</head>
 	
 	<body>
+                <form method="POST" enctype="multipart/form-data" action="upload.php"> 
+                    <input type="file" name="arquivo" id="arquivo">
+                    <br>
+                <input type="submit" value="enviar foto"/></br>
+                
                 
                 <footer>
 		    <p>Copyright &copy; MackOnline 2014</p>

@@ -10,8 +10,7 @@
 
 	</head>
 	
-	<body>
-            <?php include 'validaCadastro.php';?>
+        <body>
 	
 			<form id="form" method="post" action="perfil.php">
                             
@@ -20,6 +19,8 @@
 				<br/>
                                 <input type="email" placeholder="E-mail" name="campoemail" required/> <br/>
 				<br/>
+                                <input type="text" placeholder="Curso" name="campocurso" required /> <br/>
+                                <br/>
                                 <input type="password" placeholder="Criar senha" name="camposenha" required/><h4>*A senha deve possuir 6 dígitos, entre números e letras.</h4>
 				<br/>
 				Data de nascimento<br/>
