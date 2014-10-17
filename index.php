@@ -32,7 +32,9 @@
 	</head>
 	
 	<body>
-		
+	        
+                <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/> 
+            
 		<header id="formulario">
                 
                 <form action = "login.php" method = "post">    
@@ -52,8 +54,8 @@
             
 		
 		<section id="form">
-                    <h3>Ainda não possui uma conta? Cadastre-se </h3> <br/>
-                    <input type ="submit" value="Cadastre-se!" onclick= "javascript:window.location.href='cadastro.php'"/>
+                    <h1>Ainda não possui uma conta? Cadastre-se </h1> <br/>
+                    <input type ="submit" value="Cadastre-se!" onclick= "javascript:window.location.href='cadastro.php'" id='link'/>
 		</section>
 		
 		<br/>

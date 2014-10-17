@@ -1,55 +1,52 @@
 body{
     margin:0px;
     background-color:#FCFCFA;
+    text-align:justify;
+    height:100px;
 }
 
 header{
     background-color:#6B0000;
-    height:200px;
-    margin-top:-68px;
+    height:205px;
+    margin-top:-205px;
     color:white;
 }   
-
-#logo{
-    height:100px;
-    margin-top:-300px;
-    margin-left:350px;
-}
-
-h1{
-    font-family:"arial";
-    font-size:100px;
-    margin-left: 180px;
-}
-
-#form{
-    font-family:"arial";
-    text-align: center;
-}
 
 div{
     margin-top:120px;
     float:right;
-    margin-left:200px;
+    margin-right:90px;
+}
+
+h1{
+    float:right;
+    margin-right:170px;
+    margin-top:-380px;
+}
+
+#link{
+    float:right;
+    margin-right:330px;
+    margin-top:-300px;
+}
+
+#titulo{
+    height:200px;
+    width:1000px;
+    margin-left:40px;
 }
 
 #birds{
    height:400px; 
-   margin-left:120px;
-   margin-top:-50px;
+   margin-left:160px;
+   margin-top:100px;
    width:800px;
-}
-
-section{
-    margin-left:1300px;
-    margin-top:-550px;
 }
 
 footer{
     background-color:#202020;
     color:white;
-    height:35px;
     font-size:20px;
     text-align:center;
-    margin-top:388px;
-}
+    height:30px;
+}    
