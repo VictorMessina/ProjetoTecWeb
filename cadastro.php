@@ -11,9 +11,16 @@
 	</head>
 	
         <body>
-	
-			<form id="form" method="post" action="perfil.php">
+	    
+            <nav>
+                <img alt="titulo" src="imagensSite/titulo2.png" id='titulo2'/> 
+            </nav>    
+			
+            
+            <div id="principal">
                             
+                        <form id="form" method="post" action="perfil.php">
+                            </br></br></br>
                             <input type="text" placeholder="TIA" name="tia" required /><br/><br/>
                             <input type="text" placeholder="Nome" name="camponome" required />   <input type="text" placeholder="Sobrenome" name="campoSobrenome" required /> <br/>
 				<br/>
@@ -127,7 +134,7 @@
                                 
                         </form>
 
-		<br/>
+            </div>
                 
                 <footer>
 		    <p>Copyright &copy; MackOnline 2014</p>
