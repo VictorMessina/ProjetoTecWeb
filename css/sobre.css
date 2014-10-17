@@ -23,7 +23,7 @@ section p{
 
 div{
     margin-top: 160px;
-     margin-left:340px;
+     margin-left:450px;
 }
 
 
@@ -33,5 +33,6 @@ footer{
     height:35px;
     font-size:20px;
     text-align:center;
-    margin-top: 200px;
+    margin-top: 260px;
+    width: 100%;
 }

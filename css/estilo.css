@@ -10,23 +10,24 @@ header{
     height:205px;
     margin-top:-205px;
     color:white;
+    width: 100%;
 }   
 
 div{
     margin-top:120px;
     float:right;
-    margin-right:90px;
+    margin-right:35px;
 }
 
 h1{
     float:right;
-    margin-right:170px;
+    margin-right:50px;
     margin-top:-380px;
 }
 
 #link{
     float:right;
-    margin-right:330px;
+    margin-right:290px;
     margin-top:-300px;
 }
 
@@ -37,10 +38,10 @@ h1{
 }
 
 #birds{
-   height:400px; 
+   height:350px; 
    margin-left:160px;
-   margin-top:100px;
-   width:800px;
+   margin-top:74px;
+   width:700px;
 }
 
 footer{
@@ -49,4 +50,5 @@ footer{
     font-size:20px;
     text-align:center;
     height:30px;
+    width: 100%;
 }    
