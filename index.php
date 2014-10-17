@@ -8,27 +8,7 @@
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
 		<link rel="stylesheet" type="text/css" href="css/estilo.css"/>
 			
-                    <script type="text/javascript">
-			var tempoP=0;
-			
-			setInterval(trocaHora,1000);
-			
-			function trocaHora(){
-				var date = new Date();
-				var horas = date.getHours();
-				var minutos = date.getMinutes();
-				var segundos = date.getSeconds();
-				
-				if(horas<10) horas = "0"+horas;
-				if(minutos<10) minutos = "0"+minutos;
-				if(segundos<10) segundos = "0"+segundos;
-				
-				var texto = horas+":"+minutos+":"+segundos;
-				
-				document.getElementById("relogio").innerHTML = texto;
-			}
-			
-		    </script>
+                    
 	</head>
 	
 	<body>
