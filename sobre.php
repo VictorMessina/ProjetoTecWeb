@@ -11,7 +11,7 @@
         </head>
         
             <body>
-
+                
                     <section>
                         <p> <br/>
                             O Site The North's Birds, é um site criado pelos alunos da FCI do proprio Mackenzie, para ajudar os alunos de todas as faculdades presentes dentro da universidade <br/> a realizar trocas, vendas e  
@@ -26,7 +26,7 @@
                     </section>
                 
                 <div> 
-                    <img alt="logoMack" src="imagensSite/mackenzie.jpg" id='mackenzie'onclick= "javascript:window.location.href='index.php'"/> 
+                    <img alt="logoMack" src="imagensSite/mackenzie.jpg" id='mackenzie'onclick= "javascript:window.location.href='perfil.php'"/> 
                 </div>
                 
                 <footer>
