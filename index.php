@@ -11,7 +11,7 @@
 	</head>
 	
 	<body>
-	  
+	  <?php include 'conectaDB.php';?>
             <nav>
                 <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/> 
              	         

@@ -1,7 +1,7 @@
 <?php 
 
-        $email = $_POST['campoemail'];
-        $senha= $_POST['camposenha'];
+        $email = $_POST['email'];
+        $senha= $_POST['senha'];
 	
 	include "validaLogin.php";
 	$resposta = autentica($email,$senha);
