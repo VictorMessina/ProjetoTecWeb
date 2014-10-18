@@ -22,13 +22,13 @@
                         <form id="form" method="post" action="perfil.php">
                             </br></br></br>
                             <input type="text" placeholder="TIA" name="tia" required /><br/><br/>
-                            <input type="text" placeholder="Nome" name="camponome" required />   <input type="text" placeholder="Sobrenome" name="campoSobrenome" required /> <br/>
+                            <input type="text" placeholder="Nome" name="nome" required />   <input type="text" placeholder="Sobrenome" name="sobrenome" required /> <br/>
 				<br/>
-                                <input type="email" placeholder="E-mail" name="campoemail" required/> <br/>
+                                <input type="email" placeholder="E-mail" name="email" required/> <br/>
 				<br/>
-                                <input type="text" placeholder="Curso" name="campocurso" required /> <br/>
+                                <input type="text" placeholder="Curso" name="curso" required /> <br/>
                                 <br/>
-                                <input type="password" placeholder="Criar senha" name="camposenha" required/><h4>*A senha deve possuir 6 dígitos, entre números e letras.</h4>
+                                <input type="password" placeholder="Criar senha" name="senha" required/><h4>*A senha deve possuir 6 dígitos, entre números e letras.</h4>
 				<br/>
 				Data de nascimento<br/>
 				<select name="dia">

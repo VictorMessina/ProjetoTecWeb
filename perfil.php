@@ -18,7 +18,7 @@
                     
                     <?php
                     
-                        echo "<h3>". $_POST['camponome']; "</h3>";
+                        echo "<h3>". $_POST['nome']; "</h3>";
                     
                     ?>
                     
