@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<link rel="shortcut icon" type="image/x-icon" href="imagensSite/logo.png"/>
-		<title>Perfil</title>
+		<title>Feed</title>
 		<meta charset="utf-8"/>
 		<meta name="descripition" content="Formulário"/>
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
@@ -14,23 +14,34 @@
 	<body>
             
             <nav>
+                <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/> 
                 <div>
                     
                     <?php
                     
                         echo "<h3>". $_POST['nome']; "</h3>";
+                        echo "<h3>". $_POST['campocurso']; "</h3>";
+                        echo "<h3>". $_POST['titulo']; "</h3>";
+                        echo "<h3>". $_POST['autor']; "</h3>";
+                        echo "<h3>". $_POST['editora']; "</h3>";
+                        echo "<h3>". $_POST['preço']; "</h3>";
+                        echo "<h3>". $_POST['comentario']; "</h3>";
+                        echo $_FILES['arquivo'] ['name']; 
+                        echo $_FILES['arquivo'] ['tmp_name']; 
+                        echo $_FILES['arquivo'] ['type']; 
+                        echo $_FILES['arquivo'] ['size']; 
+                        
+                        
                     
                     ?>
                     
+                    <input type="hidden" name="titulo" value="<?php echo $_POST['titulo']; ?>"> 
+                    <input type="hidden" name="autor" value="<?php echo $_POST['autor']; ?>"> 
+                    <input type="hidden" name="editora" value="<?php echo $_POST['editora']; ?>"> 
+                    <input type="hidden" name="preço" value="<?php echo $_POST['preço']; ?>"> 
+                    <input type="hidden" name="comentario" value="<?php echo $_POST['comentario']; ?>"> 
+                    
                 </div>
-                
-                 <form method="POST" enctype="multipart/form-data" action="upload.php"> 
-                    Atualizar foto do perfil:
-                    <input type="file" name="arquivo" id="arquivo">
-                    <br>
-                    <input type="submit" value="enviar foto"/></br>
-                    <br><br>
-                 </form>
             </nav>  
             
             <header>
@@ -60,38 +71,9 @@
                 </div>
             </header>
             
-            <form method="POST" action="feed.php"> 
-                <input type="hidden" name="tia" value="<?php echo $_POST['tia']; ?>"> 
-                <input type="hidden" name="camponome" value="<?php echo $_POST['camponome']; ?>"> 
- 		<input type="hidden" name="campoemail" value="<?php echo $_POST['campoemail']; ?>"> 
- 		<input type="hidden" name="campocurso" value="<?php echo $_POST['campocurso']; ?>"> 
- 		<input type="hidden" name="sexo" value="<?php echo $_POST['sexo']; ?>"> 
-            </form>    
+                
             
-                <form method="POST" enctype="multipart/form-data" action="upload.php"> 
-                    <br><br><br><br><br><br>
-                    Faça aqui suas postagens:<br><br>
-                    Título:
-                    <br><textarea name="titulo" rows="1" cols="50"></textarea><br>
-                    <br/><br/>
-                    Autor:
-                    <br><textarea name="autor" rows="1" cols="50"></textarea><br>
-                    <br/><br/>
-                    Editora:
-                    <br><textarea name="editora" rows="1" cols="50"></textarea><br>
-                    <br/><br/>
-                    Preço:
-                    <br><textarea name="preço" rows="1" cols="50"></textarea><br>
-                    <br/><br/>
-                    Comentário:
-                    <br><textarea name="comentario" rows="10" cols="50"></textarea><br>
-                    <br/><br/>
-                    Inserir imagem do livro:
-                    <input type="file" name="arquivo" id="arquivo">
-                    <br>
-                    <input type="submit" value="enviar"/></br>
-                    <br><br>
-                    <input type="submit" value="Adicionar"/></br>
+            
                 
                 <footer>
 		    <p>Copyright &copy; MackOnline 2014</p>

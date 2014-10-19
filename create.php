@@ -32,6 +32,8 @@
 
                     mysqli_close ($conexao);
                 ?>
-                <a href="index.php">voltar</a>
+                <br><br>
+                <img alt="voltar" src="imagensSite/voltar.png" onclick= "javascript:window.location.href='index.php'"/> 
+                
             </body>
     </html>

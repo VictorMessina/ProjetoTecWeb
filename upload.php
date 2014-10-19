@@ -6,6 +6,7 @@
     </head>
         <body>
             <?php
+            
                 echo " O nome do arquivo é: ".$_FILES['arquivo']['name'];
                 echo "<br/>";
                 echo $_FILES['arquivo']['tmp_name'];
@@ -16,5 +17,19 @@
                 echo "<br/>";
                 echo $_FILES['arquivo']['error'];
             ?>
+            
+            <form method="POST" action="feed.php"> 
+                <input type="hidden" name="tia" value="<?php echo $_POST['tia']; ?>"> 
+                <input type="hidden" name="camponome" value="<?php echo $_POST['camponome']; ?>"> 
+ 		<input type="hidden" name="campoemail" value="<?php echo $_POST['campoemail']; ?>"> 
+ 		<input type="hidden" name="campocurso" value="<?php echo $_POST['campocurso']; ?>"> 
+ 		<input type="hidden" name="sexo" value="<?php echo $_POST['sexo']; ?>"> 
+                
+                <input type="hidden" name="arquivo" value="<?php echo $_FILES['arquivo'] ['name']; ?>"> 
+                <input type="hidden" name="arquivo" value="<?php echo $_FILES['arquivo'] ['tmp_name']; ?>"> 
+                <input type="hidden" name="arquivo" value="<?php echo $_FILES['arquivo'] ['type']; ?>"> 
+                <input type="hidden" name="arquivo" value="<?php echo $_FILES['arquivo'] ['size']; ?>"> 
+            </form>   
+            
         </body>
 </html>
