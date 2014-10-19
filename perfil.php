@@ -34,37 +34,14 @@
             </nav>  
             
             <header>
-                <div id='cssmenu'>
-                    <ul>
-                        <li><a href='feed.php'>Home</a></li>
-                        <li><a href='perfil.php'>Perfil</a></li>
-                       <li class='active has-sub'><a href='#'>Categorias</a>
-                          <ul>
-                             <li class='has-sub'><a href='#'>Cursos</a>
-                                <ul>
-                                   <li><a href='#'>-</a></li>
-                                   <li><a href='#'>-</a></li>
-                                </ul>
-                             </li>
-                             <li class='has-sub'><a href='#'>lalala</a>
-                                <ul>
-                                   <li><a href='#'>Sub Product</a></li>
-                                   <li><a href='#'>Sub Product</a></li>
-                                </ul>
-                             </li>
-                          </ul>
-                       </li>
-                       <li><a href='sobre.php'>Quem somos</a></li>
-                       <li><a href='contato.php'>Contato</a></li>
-                    </ul>
-                </div>
+               <?php include 'menu.php';?>
             </header>
             
             <form method="POST" action="feed.php"> 
                 <input type="hidden" name="tia" value="<?php echo $_POST['tia']; ?>"> 
-                <input type="hidden" name="camponome" value="<?php echo $_POST['camponome']; ?>"> 
- 		<input type="hidden" name="campoemail" value="<?php echo $_POST['campoemail']; ?>"> 
- 		<input type="hidden" name="campocurso" value="<?php echo $_POST['campocurso']; ?>"> 
+                <input type="hidden" name="camponome" value="<?php echo $_POST['nome']; ?>"> 
+ 		<input type="hidden" name="campoemail" value="<?php echo $_POST['email']; ?>"> 
+ 		<input type="hidden" name="campocurso" value="<?php echo $_POST['curso']; ?>"> 
  		<input type="hidden" name="sexo" value="<?php echo $_POST['sexo']; ?>"> 
             </form>    
             

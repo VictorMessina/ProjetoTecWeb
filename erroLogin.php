@@ -21,7 +21,7 @@
                                 
             <div>
                 <h1> Email ou senha inválidos, volte e digite suas informações corretamente</h1>
-                <img alt="voltar" src="imagensSite/voltar.jpg" onclick= "javascript:window.location.href='index.php'"/> 
+                <img alt="voltar" src="imagensSite/voltar.png" onclick= "javascript:window.location.href='index.php'"/> 
             </div>
                         
             <footer>

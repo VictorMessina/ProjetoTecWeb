@@ -26,7 +26,7 @@
                     </section>
                 
                 <div> 
-                    <img alt="logoMack" src="imagensSite/mackenzie.jpg" id='mackenzie'onclick= "javascript:window.location.href='perfil.php'"/> 
+                    <img alt="volta" src="imagensSite/voltar.png" id='mackenzie'onclick= "javascript:window.location.href='perfil.php'"/> 
                 </div>
                 
                 <footer>

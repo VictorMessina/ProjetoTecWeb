@@ -16,38 +16,15 @@
                 <img alt="logo" src="imagensSite/mackenzie.jpg"/>
                 
                 <header>
-                <div id='cssmenu'>
-                    <ul>
-                        <li><a href='feed.php'>Home</a></li>
-                        <li><a href='perfil.php'>Perfil</a></li>
-                       <li class='active has-sub'><a href='#'>Categorias</a>
-                          <ul>
-                             <li class='has-sub'><a href='#'>Cursos</a>
-                                <ul>
-                                   <li><a href='#'>-</a></li>
-                                   <li><a href='#'>-</a></li>
-                                </ul>
-                             </li>
-                             <li class='has-sub'><a href='#'>lalala</a>
-                                <ul>
-                                   <li><a href='#'>Sub Product</a></li>
-                                   <li><a href='#'>Sub Product</a></li>
-                                </ul>
-                             </li>
-                          </ul>
-                       </li>
-                       <li><a href='sobre.php'>Quem somos</a></li>
-                       <li><a href='contato.php'>Contato</a></li>
-                    </ul>
-                </div>
-            </header>
+                    <?php include 'menu.php';?>
+                </header>
 				
 		<h1>Contato</h1><br/>
 		<h3>Gostaria de dar sugestões, fazer críticas e/ou reclamações? Entre em contato conosco!</h3>
                 <br/><br/>
 		<form>
-                    Nome: <input type="text" placeholder="Nome" name="camponome"/><br/>
-                    Email: <input type="email" placeholder="Email" name="campoemail"/><br/><br/> 
+                    Nome: <input type="text" placeholder="Nome" name="nome"/><br/>
+                    Email: <input type="email" placeholder="Email" name="email"/><br/><br/> 
                     <br/>Escreva um comentário:<br/><textarea name="mensagem" rows="10" cols="50"></textarea><br/><br/>
                     <br/>Dê uma nota de 0 a 5:<br/>
                             <input type="radio" name="nota" value="0"/>0<br/>
@@ -58,7 +35,7 @@
                             <input type="radio" name="nota" value="5" checked />5<br/><br/>
                             <input type="submit" value="Enviar"/><br/>
                 </form>
-                <br/><br/><a href="perfil.php" style="text-decoration:none; color:#000;">Voltar</a>
+                <br/><br/><img alt="volta" src="imagensSite/voltar.png" id='mackenzie'onclick= "javascript:window.location.href='perfil.php'"/> 
 		
 		<br/><footer>
 		<small>Copyright &copy; The North's Birds 2014</small>
