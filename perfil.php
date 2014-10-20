@@ -14,36 +14,36 @@
 	<body>
             
             <nav>
-                <div>
-                    
-                    <?php
-                    
-                        echo "<h3>". $_POST['nome']; "</h3>";
-                    
-                    ?>
-                    
-                </div>
+                <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/>
                 
-                 <form method="POST" enctype="multipart/form-data" action="upload.php"> 
+            </nav>     
+                
+            <header>
+                <?php include 'menu.php';?>
+            <header>
+                
+                
+            <div id="principal">
+                     
+                <?php
+                    echo "<h3>". $_POST['nome']; "</h3>";
+                ?>
+            
+                <form method="POST" enctype="multipart/form-data" action="upload.php"> 
                     Atualizar foto do perfil:
                     <input type="file" name="arquivo" id="arquivo">
                     <br>
                     <input type="submit" value="enviar foto"/></br>
                     <br><br>
                  </form>
-            </nav>  
             
-            <header>
-               <?php include 'menu.php';?>
-            </header>
-            
-            <form method="POST" action="feed.php"> 
-                <input type="hidden" name="tia" value="<?php echo $_POST['tia']; ?>"> 
-                <input type="hidden" name="camponome" value="<?php echo $_POST['nome']; ?>"> 
- 		<input type="hidden" name="campoemail" value="<?php echo $_POST['email']; ?>"> 
- 		<input type="hidden" name="campocurso" value="<?php echo $_POST['curso']; ?>"> 
- 		<input type="hidden" name="sexo" value="<?php echo $_POST['sexo']; ?>"> 
-            </form>    
+                <form method="POST" action="feed.php"> 
+                    <input type="hidden" name="tia" value="<?php echo $_POST['tia']; ?>"> 
+                    <input type="hidden" name="camponome" value="<?php echo $_POST['nome']; ?>"> 
+ 		    <input type="hidden" name="campoemail" value="<?php echo $_POST['email']; ?>"> 
+ 		    <input type="hidden" name="campocurso" value="<?php echo $_POST['curso']; ?>"> 
+ 		    <input type="hidden" name="sexo" value="<?php echo $_POST['sexo']; ?>"> 
+                </form>    
             
                 <form method="POST" enctype="multipart/form-data" action="upload.php"> 
                     <br><br><br><br><br><br>
@@ -69,7 +69,9 @@
                     <input type="submit" value="enviar"/></br>
                     <br><br>
                     <input type="submit" value="Adicionar"/></br>
-                
+                       
+            </div>
+            
                 <footer>
 		    <p>Copyright &copy; MackOnline 2014</p>
 		</footer>
