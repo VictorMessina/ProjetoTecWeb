@@ -1,7 +1,27 @@
 body{
-    margin:0px;
-    background-color:white;
-    text-align:justify;
+   background-color:white;
+   margin:0px;
+   text-align:justify;
+}
+
+nav{
+    background-color:#6B0000;
+    height:205px;
+    width: 100%;
+    color:white;
+}   
+
+form{
+    float:right;
+    margin-top:-5%;
+    margin-right:2%;
+}
+
+#titulo{
+    height:90%;
+    width:50%;
+    margin-top:0.5%;
+    margin-left:2%;
 }
 
 div{
@@ -11,26 +31,6 @@ div{
 
 h1{
    margin-top:280px;
-}
-
-nav{
-    background-color:#6B0000;
-    height:205px;
-    margin-top:0px;
-    color:white;
-    width: 100%;
-}   
-
-form{
-    margin-top:-80px;
-    float:right;
-    margin-right:180px;
-}
-
-#titulo{
-    height:200px;
-    width:1000px;
-   margin-left:80px;
 }
 
 footer{

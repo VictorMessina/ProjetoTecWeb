@@ -11,9 +11,9 @@
 	</head>
 	
 	<body>
-	  <?php include 'conectaDB.php';?>
+        <?php include 'conectaDB.php';?>
             <nav>
-                <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/> 
+                <img alt="titulo" src="imagensSite/titulo.png" id='titulo' /> 
              	         
                 <form action = "login.php" method = "post">    
                     <input type="email" placeholder="E-mail" name="email" /> 
@@ -22,12 +22,11 @@
                 </form>
             </nav>    
 		                        		
-	    <div id="principal">
+	    <div>
                 <img alt="birds" src="imagensSite/birds.gif" id='birds'/>
                 <h1>Ainda não possui uma conta? Cadastre-se!! </h1> <br/>
                 <img alt="cadastrar" src="imagensSite/cadastrar.png" onclick= "javascript:window.location.href='cadastro.php'" id='link'/> 
-                
-	    </div>
+            </div>
 	        
             <footer>
 	        <p>Copyright &copy; MackOnline 2014</p>
