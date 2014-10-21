@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 18-Out-2014 às 06:23
+-- Generation Time: 21-Out-2014 às 20:50
 -- Versão do servidor: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -35,15 +35,16 @@ CREATE TABLE IF NOT EXISTS `cadastro` (
   `curso` text NOT NULL,
   `senha` varchar(10) NOT NULL,
   `data` date NOT NULL,
-  `sexo` char(1) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+  `sexo` char(1) NOT NULL,
+  `foto` varchar(255) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Extraindo dados da tabela `cadastro`
 --
 
-INSERT INTO `cadastro` (`id_usuario`, `tia`, `nome`, `sobrenome`, `email`, `curso`, `senha`, `data`, `sexo`) VALUES
-(1, 31449530, 'Victor', 'Messina', 'victormessina95@hotmail.com', 'Analise e Desenvolvimento de Sistemas', '123456', '1995-10-23', 'M');
+INSERT INTO `cadastro` (`id_usuario`, `tia`, `nome`, `sobrenome`, `email`, `curso`, `senha`, `data`, `sexo`, `foto`) VALUES
+(1, 31449530, 'Victor', 'Messina', 'victormessina95@hotmail.com', 'Analise e Desenvolvimento de Sistemas', '123456', '1995-10-23', 'M', 'messina.jpg');
 
 -- --------------------------------------------------------
 
@@ -74,7 +75,7 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT for table `cadastro`
 --
 ALTER TABLE `cadastro`
-MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

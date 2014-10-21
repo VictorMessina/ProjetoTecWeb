@@ -20,9 +20,9 @@
             
             <form method="POST" action="feed.php"> 
                 <input type="hidden" name="tia" value="<?php echo $_POST['tia']; ?>"> 
-                <input type="hidden" name="camponome" value="<?php echo $_POST['camponome']; ?>"> 
- 		<input type="hidden" name="campoemail" value="<?php echo $_POST['campoemail']; ?>"> 
- 		<input type="hidden" name="campocurso" value="<?php echo $_POST['campocurso']; ?>"> 
+                <input type="hidden" name="nome" value="<?php echo $_POST['nome']; ?>"> 
+ 		<input type="hidden" name="email" value="<?php echo $_POST['email']; ?>"> 
+ 		<input type="hidden" name="curso" value="<?php echo $_POST['curso']; ?>"> 
  		<input type="hidden" name="sexo" value="<?php echo $_POST['sexo']; ?>"> 
                 
                 <input type="hidden" name="arquivo" value="<?php echo $_FILES['arquivo'] ['name']; ?>"> 

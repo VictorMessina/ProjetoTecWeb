@@ -6,8 +6,9 @@
 		<meta charset="utf-8"/>
 		<meta name="descripition" content="Formulário"/>
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
-                <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+                <link rel="stylesheet" type="text/css" href="css/contato.css"/>
                 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+                <script type="text/javascript" src="alerta.js"></script>
                 <script src="menu.js"></script>
 		
 	</head>
@@ -22,10 +23,10 @@
 		<h1>Contato</h1><br/>
 		<h3>Gostaria de dar sugestões, fazer críticas e/ou reclamações? Entre em contato conosco!</h3>
                 <br/><br/>
-		<form>
-                    Nome: <input type="text" placeholder="Nome" name="nome"/><br/>
-                    Email: <input type="email" placeholder="Email" name="email"/><br/><br/> 
-                    <br/>Escreva um comentário:<br/><textarea name="mensagem" rows="10" cols="50"></textarea><br/><br/>
+                <form name="form1" method="post" onsubmit="return validaDados()">
+                    Nome: <input type="text" placeholder="Nome" name="nome" required/><br/>
+                    Email: <input type="email" placeholder="Email" name="email" required/><br/><br/> 
+                    <br/>Escreva um comentário:<br/><textarea name="mensagem" rows="10" cols="50" id="mensagem"></textarea><br/><br/>
                     <br/>Dê uma nota de 0 a 5:<br/>
                             <input type="radio" name="nota" value="0"/>0<br/>
                             <input type="radio" name="nota" value="1"/>1<br/>

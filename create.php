@@ -18,10 +18,11 @@
                     $sexo = $_POST['sexo'];
                     $data = $_POST['data'];
                     $senha = $_POST ['senha'];
+                    $foto = $_POST['foto'];
 
                     include "conectaDB.php";
 
-                    $sql = "INSERT INTO cadastro(nome, tia, sobrenome, email, curso, sexo , data, senha) VALUES('$nome', '$tia', '$sobrenome', '$email', '$curso', '$sexo', '$data', '$senha')";
+                    $sql = "INSERT INTO cadastro(nome, tia, sobrenome, email, curso, sexo , data, senha, foto) VALUES('$nome', '$tia', '$sobrenome', '$email', '$curso', '$sexo', '$data', '$senha', '$foto')";
                     $resultado = mysqli_query($conexao, $sql);
 
                     if ($resultado){
