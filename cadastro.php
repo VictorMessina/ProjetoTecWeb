@@ -66,20 +66,20 @@
 					<option value='31'>31</option>
 				</select>
 				
-				<select name='mês'>
+				<select name='mes'>
 					<option value='Mês'>Mês</option>
-					<option value='Jan'>Jan</option>
-					<option value='Fev'>Fev</option>
-					<option value='Mar'>Mar</option>
-					<option value='Abr'>Abr</option>
-					<option value='Mai'>Maio</option>
-					<option value='Jun'>Jun</option>
-					<option value='Jul'>Jul</option>
-					<option value='Ago'>Ago</option>
-					<option value='Set'>Set</option>
-					<option value='Out'>Out</option>
-					<option value='Nov'>Nov</option>
-					<option value='Dez'>Dez</option>
+					<option value='01'>Jan</option>
+					<option value='02'>Fev</option>
+					<option value='03'>Mar</option>
+					<option value='04'>Abr</option>
+					<option value='05'>Maio</option>
+					<option value='06'>Jun</option>
+					<option value='07'>Jul</option>
+					<option value='08'>Ago</option>
+					<option value='09'>Set</option>
+					<option value='10'>Out</option>
+					<option value='11'>Nov</option>
+					<option value='12'>Dez</option>
 				</select>
 				
 				<select name='ano'>

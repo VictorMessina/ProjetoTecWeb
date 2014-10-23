@@ -24,10 +24,6 @@
                 
                 
             <div id="principal">
-                     
-                <?php
-                    echo "<h3>". $_POST['nome']; "</h3>";
-                ?>
             
                 <form method="POST" enctype="multipart/form-data" action="upload.php"> 
                     Atualizar foto do perfil:
