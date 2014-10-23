@@ -16,7 +16,10 @@
                     $email = $_POST['email'];
                     $curso = $_POST['curso'];
                     $sexo = $_POST['sexo'];
-                    $data = $_POST['data'];
+                    $dia = $_POST['dia'];
+                    $mes = $_POST['mes'];
+                    $ano = $_POST['ano'];
+                    $data = $ano."-".$mes."-".$dia;
                     $senha = $_POST ['senha'];
                     $foto = $_POST['foto'];
 
