@@ -29,15 +29,16 @@
                     $resultado = mysqli_query($conexao, $sql);
 
                     if ($resultado){
-                        echo "cadastro inserido com sucesso, clique no botão voltar para efetuar o login com seu email e senha cadastrados";
+                        echo "cadastro inserido com sucesso";
+                        header("Location: index.php");
+                        die();
                     } else {
-                        echo "FALHA AO INSERIR cadastro, tente novamente!";
+                        echo "falha ao realizar o cadastro, tente novamente!";
+                         header("Location: cadastro.php");
+                        die();  
                     }
 
                     mysqli_close ($conexao);
                 ?>
-                <br><br>
-                <img alt="voltar" src="imagensSite/voltar.png" onclick= "javascript:window.location.href='index.php'"/> 
-                
             </body>
     </html>

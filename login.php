@@ -1,5 +1,4 @@
 <?php 
-
         $email = $_POST['email'];
         $senha= $_POST['senha'];
 	
@@ -9,7 +8,9 @@
 	if($resposta == true)
 	{
 		header("Location: perfil.php");
+                die();
 	} else {
 		header("Location: erroLogin.php");
+                die();
 	}
 ?>

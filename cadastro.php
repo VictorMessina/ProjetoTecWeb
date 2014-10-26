@@ -22,7 +22,8 @@
                            echo "<form id='form' method='post' action='create.php'>
                                 </br></br></br>
                                 <input type='text' placeholder='TIA' name='tia' required /><br/><br/>
-                                <input type='text' placeholder='Nome' name='nome' required />   <input type='text' placeholder='Sobrenome' name='sobrenome' required /> <br/> <br/>
+                                <input type='text' placeholder='Nome' name='nome' required />   
+                                <input type='text' placeholder='Sobrenome' name='sobrenome' required /> <br/> <br/>
 				<strong> Coloque sua foto de perfil aqui</strong> <input type='file' name='foto' required/> <br/><br/>
                                 <input type='email' placeholder='E-mail' name='email' required/> <br/>
 				<br/>
