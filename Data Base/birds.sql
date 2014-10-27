@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `cadastro` (
   `tia` bigint(8) NOT NULL,
   `nome` varchar(50) NOT NULL,
   `sobrenome` varchar(50) NOT NULL,
-  `email` int(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
   `curso` text NOT NULL,
   `senha` varchar(255) NOT NULL,
   `data` date NOT NULL,
