@@ -15,11 +15,12 @@
             <nav>
                 <img alt="titulo" src="imagensSite/titulo.png" id='titulo' /> 
              	         
-                <form action = "login.php" method = "post">    
-                    <input type="email" placeholder="E-mail" name="email" /> 
-	            <input type="password" placeholder="Senha" name="senha"/>
-		    <input type="submit" value="Entrar"/>
-                </form>
+                <?php  echo "<form action = 'validaLogin.php' method = 'post'>    
+                    <input type='text' placeholder='E-mail' name='email' /> 
+	            <input type='password' placeholder='Senha' name='senha'/>
+		    <input type='submit' value='Entrar'/>
+                    </form>";
+                ?>
             </nav>    
 		                        		
 	    <div>
