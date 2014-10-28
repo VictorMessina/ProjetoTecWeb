@@ -21,7 +21,7 @@
 		    <input type='submit' value='Entrar'/>
                     </form>";
                 ?>
-            </nav>
+            </nav>  
 		                        		
 	    <div>
                 <img alt="birds" src="imagensSite/birds.gif" id='birds'/>

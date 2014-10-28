@@ -2,7 +2,7 @@
 
 include 'conectaDB.php';
 
- $email = $_POST['email']; 
+ $email = $_POST['email'];
  $senha = $_POST['senha'];
  
   $sql = "SELECT * FROM cadastro WHERE(email='$email' && senha='$senha')";
