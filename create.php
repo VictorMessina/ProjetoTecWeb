@@ -4,7 +4,7 @@
             <link rel="shortcut icon" type="image/x-icon" href="imagensSite/logo.png"/>
             <title>Criação Cadastro</title>
             <meta charset="utf-8"/>
-            <meta name="descripition" content="Formulário"/>
+            <meta name="descripition" content="criação cadastro"/>
             <meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
         </head>
             

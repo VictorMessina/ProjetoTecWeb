@@ -4,7 +4,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="imagensSite/logo.png"/>
 		<title>Perfil</title>
 		<meta charset="utf-8"/>
-		<meta name="descripition" content="Formulário"/>
+		<meta name="descripition" content="perfil"/>
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
                 <link rel="stylesheet" type="text/css" href="css/perfil.css"/>
                 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -33,15 +33,9 @@
                     <br><br>
                  </form>
             
-                <form method="POST" action="feed.php"> 
-                    <input type="hidden" name="tia" value="<?php echo $_POST['tia']; ?>"> 
-                    <input type="hidden" name="camponome" value="<?php echo $_POST['nome']; ?>"> 
- 		    <input type="hidden" name="campoemail" value="<?php echo $_POST['email']; ?>"> 
- 		    <input type="hidden" name="campocurso" value="<?php echo $_POST['curso']; ?>"> 
- 		    <input type="hidden" name="sexo" value="<?php echo $_POST['sexo']; ?>"> 
-                </form>    
+                
             
-                <form method="POST" enctype="multipart/form-data" action="upload.php"> 
+                <form method="POST" enctype="multipart/form-data" action="feed.php"> 
                     <br><br><br><br><br><br>
                     Faça aqui suas postagens:<br><br>
                     Título:
@@ -62,7 +56,6 @@
                     Inserir imagem do livro:
                     <input type="file" name="arquivo" id="arquivo">
                     <br>
-                    <input type="submit" value="enviar"/></br>
                     <br><br>
                     <input type="submit" value="Adicionar"/></br>
                        

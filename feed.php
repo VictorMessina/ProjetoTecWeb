@@ -4,7 +4,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="imagensSite/logo.png"/>
 		<title>Feed</title>
 		<meta charset="utf-8"/>
-		<meta name="descripition" content="Formulário"/>
+		<meta name="descripition" content="feed"/>
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
                 <link rel="stylesheet" type="text/css" href="css/perfil.css"/>
                 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -31,15 +31,7 @@
                         echo $_FILES['arquivo'] ['type']; 
                         echo $_FILES['arquivo'] ['size']; 
                         
-                        
-                    
                     ?>
-                    
-                    <input type="hidden" name="titulo" value="<?php echo $_POST['titulo']; ?>"> 
-                    <input type="hidden" name="autor" value="<?php echo $_POST['autor']; ?>"> 
-                    <input type="hidden" name="editora" value="<?php echo $_POST['editora']; ?>"> 
-                    <input type="hidden" name="preço" value="<?php echo $_POST['preço']; ?>"> 
-                    <input type="hidden" name="comentario" value="<?php echo $_POST['comentario']; ?>"> 
                     
                 </div>
             </nav>  
