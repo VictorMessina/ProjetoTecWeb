@@ -17,7 +17,7 @@
 	            <input type="password" placeholder="Senha" name="senha"/>
 		    <input type="submit" value="Entrar"/>
                 </form>
-            </nav>   
+            </nav>
                                 
             <div>
                 <h1> Email ou senha inválidos, volte e digite suas informações corretamente</h1>
