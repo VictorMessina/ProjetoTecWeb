@@ -15,7 +15,7 @@
             
             <nav>
                 <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/> 
-                <div>
+                <div id="principal">
                     
                     <?php
                     

@@ -54,7 +54,7 @@
                     <br><textarea name="comentario" rows="10" cols="50"></textarea><br>
                     <br/><br/>
                     Inserir imagem do livro:
-                    <input type="file" name="arquivo" id="arquivo">
+                    <br><input type="file" name="arquivo" id="arquivo">
                     <br>
                     <br><br>
                     <input type="submit" value="Adicionar"/></br>
