@@ -7,6 +7,7 @@
 		<meta name="descripition" content="Formulário"/>
 		<meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
 		<link rel="stylesheet" type="text/css" href="css/cadastro.css"/>
+                <script type="text/javascript" src="validaCamposCadastro.js"></script>
 
 	</head>
 	
@@ -19,17 +20,17 @@
             
             <div id="principal">
                         <?php     
-                           echo "<form id='form' method='post' action='create.php'>
+                           echo "<form id='form' name='form' method='post' action='create.php' onsubmit='return validaDados()'>
                                 </br></br></br>
-                                <input type='text' placeholder='TIA' name='tia' required /><br/><br/>
-                                <input type='text' placeholder='Nome' name='nome' required />   
-                                <input type='text' placeholder='Sobrenome' name='sobrenome' required /> <br/> <br/>
+                                <input type='text' placeholder='TIA' name='tia' /><br/><br/>
+                                <input type='text' placeholder='Nome' name='nome'  />   
+                                <input type='text' placeholder='Sobrenome' name='sobrenome'  /> <br/> <br/>
 				<strong> Coloque sua foto de perfil aqui</strong> <input type='file' name='foto' required/> <br/><br/>
-                                <input type='email' placeholder='E-mail' name='email' required/> <br/>
+                                <input type='email' placeholder='E-mail' name='email' /> <br/>
 				<br/>
-                                <input type='text' placeholder='Curso' name='curso' required /> <br/>
+                                <input type='text' placeholder='Curso' name='curso' /> <br/>
                                 <br/>
-                                <input type='password' placeholder='Criar senha' name='senha' required/> <h4>*A senha deve possuir 6 dígitos, entre números e letras.</h4>
+                                <input type='password' placeholder='Criar senha' name='senha' /> <h4>*A senha deve possuir 6 dígitos, entre números e letras.</h4>
 				<br/>
 				<Data de nascimento<br/>
 				<select name='dia'>

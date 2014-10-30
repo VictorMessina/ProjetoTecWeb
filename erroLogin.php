@@ -8,15 +8,16 @@
                 <link rel="stylesheet" type="text/css" href="css/erroLogin.css"/>
 	</head>
         <body>
-       
+       <?php include 'conectaDB.php';?>
             <nav>
                 <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/> 
-             	         
-                <form action = "validaLogin.php" method = "post">    
-                    <input type="text" placeholder="E-mail" name="email" /> 
-	            <input type="password" placeholder="Senha" name="senha"/>
-		    <input type="submit" value="Entrar"/>
-                </form>
+             	<?php          
+                    echo "<form action = 'validaLogin.php' method = 'post'>    
+                        <input type='text' placeholder='E-mail' name='email' /> 
+                        <input type='password' placeholder='Senha' name='senha'/>
+                        <input type='submit' value='Entrar'/>
+                    </form>";
+                ?>
             </nav>  
                                 
             <div>
