@@ -12,6 +12,16 @@
 	</head>
 	
 	<body>
+	<?php
+
+if(!$_SESSION["usuario"]) {
+   header("location: erroLogin.php");
+   die();
+}
+?>
+	
+	
+	
             
             <nav>
                 <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/>
