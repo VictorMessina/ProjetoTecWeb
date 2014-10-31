@@ -39,7 +39,7 @@
                                             echo "<option value='dia'>$i</option> ";                                          
                                         }
                                         
-                            echo "</select>
+                            echo  "</select>
 				
 				<select name='mes'>
 					<option value='Mês'>Mês</option>
