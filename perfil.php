@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -19,9 +20,12 @@ if(!$_SESSION["usuario"]) {
    die();
 }
 ?>
+	<?php
+            $nome=$_GET['nome'];
+            $foto=$_GET['foto'];
+        ?>
 	
-	
-	
+	 <?php include 'conectaDB.php';?>
             
             <nav>
                 <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/>
@@ -30,6 +34,9 @@ if(!$_SESSION["usuario"]) {
                 
             <header>
                 <?php include 'menu.php';?>
+                <form action="logout.php">
+                    <input type="submit" value="Sair"/>
+                </form>
             <header>
                 
                 

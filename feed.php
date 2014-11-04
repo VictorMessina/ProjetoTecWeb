@@ -20,11 +20,11 @@
                     <?php
                     
                         echo "<h3>". $_POST['nome']; "</h3>";
-                        echo "<h3>". $_POST['campocurso']; "</h3>";
-                        echo "<h3>". $_POST['titulo']; "</h3>";
-                        echo "<h3>". $_POST['autor']; "</h3>";
-                        echo "<h3>". $_POST['editora']; "</h3>";
-                        echo "<h3>". $_POST['preço']; "</h3>";
+                        echo "<h3>Curso: ". $_POST['curso']; "</h3>";
+                        echo "<h3>Título: ". $_POST['titulo']; "</h3>";
+                        echo "<h3>Autor: ". $_POST['autor']; "</h3>";
+                        echo "<h3>Editora: ". $_POST['editora']; "</h3>";
+                        echo "<h3>Preço: ". $_POST['preço']; "</h3>";
                         echo "<h3>". $_POST['comentario']; "</h3>";
                         echo $_FILES['arquivo'] ['name']; 
                         echo $_FILES['arquivo'] ['tmp_name']; 
