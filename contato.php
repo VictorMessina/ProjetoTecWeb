@@ -12,17 +12,23 @@
                 <script src="menu.js"></script>
 		
 	</head>
-	
-	<body id="formulario">
-                <img alt="logo" src="imagensSite/mackenzie.jpg"/>
+
+    <body>    
+	<nav>
+            <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/>
+        </nav>     
                 
-                <header>
-                    <?php include 'menu.php';?>
-                </header>
-				
-		<h1>Contato</h1><br/>
-		<h3>Gostaria de dar sugestões, fazer críticas e/ou reclamações? Entre em contato conosco!</h3>
-                <br/><br/>
+        <header>
+            <?php include 'menu.php';?>
+        </header>
+		
+        <div id="principal">
+            <section>
+                <h1>Contato</h1><br/>
+		<h2>Gostaria de dar sugestões, fazer críticas e/ou reclamações? Entre em contato conosco!</h3>
+                <br/>
+                <br/>
+                
                 <form name="form1" method="post" onsubmit="return validaDados()">
                     Nome: <input type="text" placeholder="Nome" name="nome" required/><br/>
                     Email: <input type="email" placeholder="Email" name="email" required/><br/><br/> 
@@ -36,11 +42,17 @@
                             <input type="radio" name="nota" value="5" checked />5<br/><br/>
                             <input type="submit" value="Enviar"/><br/>
                 </form>
-                <br/><br/><img alt="volta" src="imagensSite/voltar.png" id='mackenzie'onclick= "javascript:window.location.href='perfil.php'"/> 
-		
-		<br/><footer>
-		<small>Copyright &copy; The North's Birds 2014</small>
-		</footer>
+                
+                <img alt="volta" src="imagensSite/voltar.png" id='mackenzie'onclick= "javascript:window.location.href='perfil.php'"/> 
+                <br/><br/>
+            <section>    
+        </div>        
+        	
+		<br/>
+                
+        <footer>
+	    <p>Copyright &copy; The North's Birds 2014</p>
+	</footer>
 	
-	</body>
+    </body>
 </html>
