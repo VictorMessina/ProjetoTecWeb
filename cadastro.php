@@ -38,7 +38,7 @@
 				<select name='dia'>
                                         <option value='dia'>Dia</option>";
                                         for($i = 1; $i <= 31; $i++){
-                                            echo "<option value='dia'>$i</option> ";                                          
+                                            echo "<option value='$i'>$i</option> ";                                          
                                         }
                                         
                             echo  "</select>
@@ -62,7 +62,7 @@
 				<select name='ano'>
                                         <option value='ano'>Ano</option>";
                                         for($i = 1996; $i >= 1950; $i--){
-                                            echo "<option value='ano'>$i</option> ";                                          
+                                            echo "<option value='$i'>$i</option> ";                                          
                                         }
                                         
                             echo "</select>
