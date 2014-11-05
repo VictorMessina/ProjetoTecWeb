@@ -359,3 +359,9 @@ footer{
 form{
     margin-left:35%;
 }
+
+#txt{
+    text-align:center;
+    font-size: 20pt;
+    padding:120px;
+}
