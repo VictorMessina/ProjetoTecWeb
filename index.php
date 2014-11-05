@@ -13,11 +13,11 @@
 	<body>
         <?php include 'conectaDB.php';?>
             <nav>
-                <img alt="titulo" src="imagensSite/titulo.png" id='titulo' /> 
+                <img alt="titulo" src="imagensSite/titulo.png" id='titulo' onclick= "javascript:window.location.href='index.php'"/> 
              	         
                 <?php  echo "<form action = 'validaLogin.php' method = 'post'>    
-                    <input type='text' placeholder='E-mail' name='email' /> 
-	            <input type='password' placeholder='Senha' name='senha'/>
+                    <input type='text' placeholder='E-mail' name='email' required /> 
+	            <input type='password' placeholder='Senha' name='senha' required />
 		    <input type='submit' value='Entrar'/>
                     </form>";
                 ?>

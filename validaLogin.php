@@ -7,23 +7,30 @@ include 'conectaDB.php';
  $email = mysql_escape_string($_POST['email']);
  $senha =  mysql_escape_string($_POST['senha']);
  
-  $sql = "SELECT * FROM cadastro WHERE email='$email'";
-                    $resultado = mysqli_query($conexao, $sql);
-                    if ($resultado){
-                        while($registro= mysqli_fetch_array($resultado)){
-                            $nome=$registro['nome'];
-                            $foto=$registro['foto'];
-                            if($senha==$registro['senha'] && $email==$registro['email']){
-                                header("location: perfil.php?nome=$nome&foto=$foto");
+  //2. Criar e executar a query SQL
+	$sql = "SELECT * FROM usuarios WHERE email='$email'";
+	$resp = mysqli_query ($conexao , $sql);
+	
+	//3. Exibir os resultados
+	if($resp)
+	{
+		while ($registro = mysqli_fetch_array($resp))
+		{
+			$nome = $registro['nome'];
+			$imagem = $registro['foto'];
+			if ($senha == $registro['senha'])
+			{
+				header("Location: perfil.php?nome=$nome&imagem=$imagem");
                                 die();
-                            }
-                            else if($senha!=$registro['senha'] || $email!=$registro['email']){
-                                header("location: erroLogin.php");
-                                die();
-                            }
-                        }
-                    }
-                    
-
-                    mysqli_close ($conexao);
+			}
+			else
+			{
+			header("Location: erroLogin.php");
+                                die();	
+			}
+		}
+	} 
+	
+	//4. Fechar conexão
+	mysqli_close($conexao);
 ?>

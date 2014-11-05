@@ -20,12 +20,14 @@
             
             <div id="principal">
                         <?php     
-                           echo "<form id='form' name='form' method='post' action='create.php' onsubmit='return validaDados()'>
+                           echo "<form id='form' enctype='multipart/form-data' name='form' method='post' action='create.php' onsubmit='return validaDados()'>
                                 </br></br></br>
                                 <input type='text' placeholder='TIA' name='tia' /><br/><br/>
                                 <input type='text' placeholder='Nome' name='nome'  />   
                                 <input type='text' placeholder='Sobrenome' name='sobrenome'  /> <br/> <br/>
-				<strong> Coloque sua foto de perfil aqui</strong> <input type='file' name='foto' required/> <br/><br/>
+				<strong> Coloque sua foto de perfil aqui</strong>
+                                <input type='hidden' name='MAX_SIZE_FILE' value='100000000000'/>
+                                <input type='file' name='arquivo' required/> <br/><br/>
                                 <input type='email' placeholder='E-mail' name='email' /> <br/>
 				<br/>
                                 <input type='text' placeholder='Curso' name='curso' /> <br/>

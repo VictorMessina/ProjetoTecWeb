@@ -22,5 +22,5 @@ function validaDados(){
             alert( "Preencha campo senha corretamente, com mais de 6 caracteres" ); document.form.senha.focus(); return false; 
         }
         
-    return true && alert ("cadastro efetuado com sucesso, faça o login na pagina principal");
+    return true;
 }

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.4.1
+-- version 4.2.7.1
 -- http://www.phpmyadmin.net
 --
--- Máquina: 127.0.0.1:3308
--- Data de Criação: 30-Out-2014 às 14:41
--- Versão do servidor: 5.5.32
--- versão do PHP: 5.4.19
+-- Host: 127.0.0.1
+-- Generation Time: 05-Nov-2014 às 21:09
+-- Versão do servidor: 5.6.20
+-- PHP Version: 5.5.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,64 +17,70 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de Dados: `birds`
+-- Database: `birds`
 --
-CREATE DATABASE IF NOT EXISTS `birds` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `birds`;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `cadastro`
+-- Estrutura da tabela `post`
 --
 
-CREATE TABLE IF NOT EXISTS `cadastro` (
-  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
-  `tia` bigint(8) NOT NULL,
+CREATE TABLE IF NOT EXISTS `post` (
+`id_post` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `post` varchar(400) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+`id_usuario` int(11) NOT NULL,
+  `tia` varchar(8) NOT NULL,
   `nome` varchar(50) NOT NULL,
   `sobrenome` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `curso` text NOT NULL,
-  `senha` varchar(255) NOT NULL,
-  `data` date NOT NULL,
+  `curso` varchar(100) NOT NULL,
   `sexo` char(1) NOT NULL,
-  `foto` varchar(255) NOT NULL,
-  PRIMARY KEY (`id_usuario`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+  `data` date NOT NULL,
+  `senha` varchar(50) NOT NULL,
+  `foto` varchar(255) NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 
 --
--- Extraindo dados da tabela `cadastro`
+-- Indexes for dumped tables
 --
 
-INSERT INTO `cadastro` (`id_usuario`, `tia`, `nome`, `sobrenome`, `email`, `curso`, `senha`, `data`, `sexo`, `foto`) VALUES
-(1, 31402240, 'Bianca', 'Marques Weber', 'bibimw.96@hotmail.com', 'Sistemas de InformaÃ§Ã£o', '123456', '1996-05-28', 'F', 'Koala.jpg');
-
--- --------------------------------------------------------
+--
+-- Indexes for table `post`
+--
+ALTER TABLE `post`
+ ADD PRIMARY KEY (`id_post`);
 
 --
--- Estrutura da tabela `login`
+-- Indexes for table `usuarios`
 --
-
-CREATE TABLE IF NOT EXISTS `login` (
-  `email` varchar(100) NOT NULL,
-  `senha` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
+ALTER TABLE `usuarios`
+ ADD PRIMARY KEY (`id_usuario`);
 
 --
--- Estrutura da tabela `postagem`
+-- AUTO_INCREMENT for dumped tables
 --
 
-CREATE TABLE IF NOT EXISTS `postagem` (
-  `titulo` varchar(255) NOT NULL,
-  `autor` varchar(255) NOT NULL,
-  `editora` varchar(255) NOT NULL,
-  `preço` double NOT NULL,
-  `comentario` varchar(255) NOT NULL,
-  `arquivo` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
+--
+-- AUTO_INCREMENT for table `post`
+--
+ALTER TABLE `post`
+MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT for table `usuarios`
+--
+ALTER TABLE `usuarios`
+MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
