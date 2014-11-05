@@ -13,16 +13,12 @@
 	</head>
 	
 	<body>
-	<?php
 
-if(!$_SESSION["usuario"]) {
-   header("location: erroLogin.php");
-   die();
-}
-?>
 	<?php
             $nome=$_GET['nome'];
-            $foto=$_GET['foto'];
+            $imagem=$_GET['imagem'];
+            echo "Olá $nome, seja bem-vindo(a)!<br/>";
+            echo "<br/><img alt='imagem' id='fotoPerfil' src='$imagem'/>";
         ?>
 	
 	 <?php include 'conectaDB.php';?>
@@ -34,14 +30,10 @@ if(!$_SESSION["usuario"]) {
                 
             <header>
                 <?php include 'menu.php';?>
-                <form action="logout.php">
-                    <input type="submit" value="Sair"/>
-                </form>
             <header>
                 
                 
             <div id="principal">
-            
                 <form method="POST" enctype="multipart/form-data" action="upload.php"> 
                     Atualizar foto do perfil:
                     <input type="file" name="arquivo" id="arquivo">
@@ -75,10 +67,12 @@ if(!$_SESSION["usuario"]) {
                     <br>
                     <br><br>
                     <input type="submit" value="Adicionar"/></br>
+                </form>
                        
             </div>
             
                 <footer>
+                    <?php echo "Você acessou como $nome."; ?>  <form action="logout.php"> <input type="submit" value="Sair"/> </form>
 		    <p>Copyright &copy; MackOnline 2014</p>
 		</footer>
 	
