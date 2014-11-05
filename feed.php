@@ -19,17 +19,16 @@
                     
                     <?php
                     
-                        echo "<h3>". $_POST['nome']; "</h3>";
+                        echo "<h3>". $nome=$_GET['nome']; "</h3>";
                         echo "<h3>Curso: ". $_POST['curso']; "</h3>";
                         echo "<h3>Título: ". $_POST['titulo']; "</h3>";
                         echo "<h3>Autor: ". $_POST['autor']; "</h3>";
                         echo "<h3>Editora: ". $_POST['editora']; "</h3>";
                         echo "<h3>Preço: ". $_POST['preço']; "</h3>";
                         echo "<h3>". $_POST['comentario']; "</h3>";
-                        echo $_FILES['arquivo'] ['name']; 
-                        echo $_FILES['arquivo'] ['tmp_name']; 
-                        echo $_FILES['arquivo'] ['type']; 
-                        echo $_FILES['arquivo'] ['size']; 
+                        
+                        $imagem=$_GET['imagem'];
+                        echo "<br/><img alt='imagem' id='fotoLivro' src='$imagem' style='heigth:100px; width:150px; border-radius:10px; margin-left:30px;' />";
                         
                     ?>
                     

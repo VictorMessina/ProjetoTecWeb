@@ -14,35 +14,29 @@
 	
 	<body>
 
-	<?php
-            $nome=$_GET['nome'];
-            $imagem=$_GET['imagem'];
-            echo "Olá $nome, seja bem-vindo(a)!<br/>";
-            echo "<br/><img alt='imagem' id='fotoPerfil' src='$imagem'/>";
-        ?>
 	
 	 <?php include 'conectaDB.php';?>
             
             <nav>
                 <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/>
                 
-            </nav>     
-                
-            <header>
+            </nav>   
+            
+             <header>
                 <?php include 'menu.php';?>
-            <header>
+            <header/>
+            
+            <?php
+                $nome=$_GET['nome'];
+                $imagem=$_GET['imagem'];
+                echo "<br> <p style='margin-left:20px; font-size:16pt;'>Olá $nome, seja bem-vindo(a)!<p/><br/>";
+                echo "<br/><img alt='imagem' id='fotoPerfil' src='$imagem' style='heigth:100px; width:150px; border-radius:300px; margin-left:30px;' />";
+            ?>
+                
+           
                 
                 
             <div id="principal">
-                <form method="POST" enctype="multipart/form-data" action="upload.php"> 
-                    Atualizar foto do perfil:
-                    <input type="file" name="arquivo" id="arquivo">
-                    <br>
-                    <input type="submit" value="enviar foto"/></br>
-                    <br><br>
-                 </form>
-            
-                
             
                 <form method="POST" enctype="multipart/form-data" action="feed.php"> 
                     <br><br><br><br><br><br>
@@ -63,9 +57,9 @@
                     <br><textarea name="comentario" rows="10" cols="50"></textarea><br>
                     <br/><br/>
                     Inserir imagem do livro:
-                    <br><input type="file" name="arquivo" id="arquivo">
-                    <br>
-                    <br><br>
+                    <br><input type='hidden' name='MAX_SIZE_FILE' value='100000000000'/>
+                        <input type='file' name='arquivo'id="arquivo" /> <br/><br/>
+                    <br/><br/>
                     <input type="submit" value="Adicionar"/></br>
                 </form>
                        
