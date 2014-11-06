@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-   
-        
+<html lang="pt-br">       
 	<head>
 		<title>Feed</title>
 		<meta charset="utf-8"/>
@@ -11,12 +9,16 @@
                 <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
                 <script src="menu.js"></script>
 	</head>
-	
+        
 	<body>
             
             <nav>			
-			<img alt='titulo' src='img/titulo.png' id='titulo' />
+			<img alt='titulo' src='imagensSite/titulo.png' id='titulo' />
 	    </nav>
+            
+            <header>
+              <?php include 'menu.php';?>
+            </header>
             
             <div>
 			<?php
@@ -29,7 +31,7 @@
                 <br/><img alt='imagem' id='fotoPerfil' src="<?php echo $_SESSION['imagem']; ?>"/>
 				<form action ='createPostagem.php' method='POST' id='excecao'>
 				<p>Post:<p/><textarea name='post' rows='10' cols='50' maxlength='500'></textarea>
-				<p><input type='submit' value='PUBLICAR'/></p>
+				<p><input type='submit' value='publicar'/></p>
 				</form>
                 
                 <?php
@@ -48,14 +50,9 @@
                     ?>
                 
                 </div>
-   
-            
-            <header>
-              <?php include 'menu.php';?>
-            </header>
-            
+  
             <footer>
-			<?php echo "Você acessou como ".$_SESSION['nome']."."; ?> (<a href='index.php'><b>SAIR</b></a>)<br/>
+            <?php echo "Você acessou como ".$_SESSION['nome']."."; ?> <form action="logout.php"> <input type="submit" value="Sair"/> </form>
 	        <p>Copyright &copy; MackOnline 2014</p>
 	    </footer>
 	</body>
