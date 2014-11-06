@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    
-    <head>
-		<title>Bem-vindo!</title>
-		<meta charset="utf-8"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	</head>
+   
         
 	<head>
 		<title>Feed</title>
@@ -18,13 +13,6 @@
 	</head>
 	
 	<body>
-            <?php
-            $nome=$_GET['nome'];
-            $imagem=$_GET['imagem'];
-            echo "<br> <p style='margin-left:20px; font-size:16pt;'>Olá $nome";
-            echo "<br/><img alt='imagem' id='fotoPerfil' src='$imagem' style='heigth:100px; width:150px; border-radius:300px; margin-left:30px;' />";
-            include 'conectaDB.php';
-            ?>
             
             <nav>			
 			<img alt='titulo' src='img/titulo.png' id='titulo' />
