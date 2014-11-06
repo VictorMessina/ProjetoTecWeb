@@ -8,9 +8,6 @@
 	<body>
 		<nav>			
 			<img alt='titulo' src='imagensSite/titulo.png' id='titulo' />
-			<?php
-				include "menu.php";
-			?>
 		</nav>
 		<section id='posts'>
 			<p><strong>Essas são todas as suas postagens:</strong></p>
@@ -35,7 +32,7 @@
 			<p><img src="imagensSite/voltar.png" onclick= "javascript:window.location.href='perfil.php'"/></p>
 		</section>
 		<footer>
-                    <?php echo "Você acessou como ".$_SESSION['nome']."."; ?> <form action="logout.php"> <input type="submit" value="Sair"/> </form>
+                    <?php echo "Você acessou como ".$_SESSION['nome']."."; ?>
 	        <p>Copyright &copy; MackOnline 2014</p>
 	    </footer>
 	</body>
