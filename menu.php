@@ -7,9 +7,9 @@
                         <li><a href='contato.php'>Contato</a></li>
                        <li class='active has-sub'><a href='#'>Logout</a>
                           <ul>
-                             <li class='has-sub'><img alt='sair' src='imagensSite/sair.png' onclick= 'javascript:window.location.href='logout.php'' id='link'/></li> 
+                             <li class='has-sub'> <a href='logout.php'><img alt='sair' src='imagensSite/sair.png'> </a></li> 
                           </ul>
-                       <li>
+                       </li>
                     
                 </div>"
 ?>
