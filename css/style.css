@@ -1,0 +1,91 @@
+a{
+	text-decoration:none;
+	color: #fff;
+}
+
+body{
+   background-color:white;
+   margin:0px;
+   text-align:justify;
+}
+
+nav{
+    background-color:#6B0000;
+    height:205px;
+    width: 100%;
+    color:white;
+}   
+
+form{
+    float:right;
+    margin-top:-10%;
+    margin-right:2%;
+}
+
+#menu ul li{
+	display: inline-block;
+	width: 200px;
+	background-color: #f0f0f0;
+	padding: 10px;
+	text-align:center;
+}
+
+#menu ul li:hover{
+	background-color: #6B0000;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#excecao{
+	margin-top:4%;
+	float:center;
+}
+
+#posts{
+	text-align:center;
+}
+
+#titulo{
+    height:90%;
+    width:50%;
+    margin-top:0.5%;
+    margin-left:2%;
+}
+
+div{
+    text-align:center;
+    height:600px; 
+}
+
+h1{
+    float:right;
+    margin-top:200px;
+    margin-right:2%;
+}
+
+#link{
+    float:right;
+    margin-right:220px;
+    margin-top:0px;
+}
+
+#birds{
+    height:85%;
+    width:50%;
+    float:left;
+    margin-left:2%; 
+    margin-top:4%;
+}
+
+#fotoPerfil{
+	border-radius:10px;
+	width: 150px;
+}
+
+footer{
+    background-color:#202020;
+	color:#fff;
+	padding:10px;
+	font-size:20px;
+	text-align:center;
+}
