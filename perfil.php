@@ -51,7 +51,7 @@
                     <br><textarea name="editora" rows="1" cols="50"></textarea><br>
                     <br/><br/>
                     Preço:
-                    <br><textarea name="preço" rows="1" cols="50"></textarea><br>
+                    <br><textarea name="preco" rows="1" cols="50"></textarea><br>
                     <br/><br/>
                     Comentário:
                     <br><textarea name="comentario" rows="10" cols="50"></textarea><br>

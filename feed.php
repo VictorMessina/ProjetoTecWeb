@@ -12,6 +12,13 @@
 	</head>
 	
 	<body>
+            <?php
+            $nome=$_GET['nome'];
+            $imagem=$_GET['imagem'];
+            echo "<br> <p style='margin-left:20px; font-size:16pt;'>Olá $nome";
+            echo "<br/><img alt='imagem' id='fotoPerfil' src='$imagem' style='heigth:100px; width:150px; border-radius:300px; margin-left:30px;' />";
+            include 'conectaDB.php';
+            ?>
             
             <nav>
                 <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/> 
@@ -24,7 +31,7 @@
                         echo "<h3>Título: ". $_POST['titulo']; "</h3>";
                         echo "<h3>Autor: ". $_POST['autor']; "</h3>";
                         echo "<h3>Editora: ". $_POST['editora']; "</h3>";
-                        echo "<h3>Preço: ". $_POST['preço']; "</h3>";
+                        echo "<h3>Preço: ". $_POST['preco']; "</h3>";
                         echo "<h3>". $_POST['comentario']; "</h3>";
                         
                         $imagem=$_GET['imagem'];
