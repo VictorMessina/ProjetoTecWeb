@@ -50,6 +50,9 @@
                     Editora:
                     <br><textarea name="editora" rows="1" cols="50"></textarea><br>
                     <br/><br/>
+                    Curso:
+                    <br><textarea name="curso" rows="1" cols="50"></textarea><br>
+                    <br/><br/>
                     Preço:
                     <br><textarea name="preco" rows="1" cols="50"></textarea><br>
                     <br/><br/>
