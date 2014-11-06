@@ -69,7 +69,7 @@
             </div>
             
                 <footer>
-                    <?php echo "Você acessou como $nome."; ?>  <form action="logout.php"> <input type="submit" value="Sair"/> </form>
+                    <?php echo "Você acessou como $nome."; ?> 
 		    <p>Copyright &copy; MackOnline 2014</p>
 		</footer>
 	
