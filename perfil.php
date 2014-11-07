@@ -1,4 +1,3 @@
-<?php session_start();?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -14,7 +13,6 @@
 	
 	<body>
 
-	
 	 <?php include 'conectaDB.php';?>
             
             <nav>
@@ -24,21 +22,22 @@
             
              <header>
                 <?php include 'menu.php';?>
-            <header/>
+            </header>
             
             <?php
-                $nome=$_GET['nome'];
-                $imagem=$_GET['imagem'];
-                echo "<br> <p style='margin-left:20px; font-size:16pt;'>Olá $nome, seja bem-vindo(a)!<p/><br/>";
-                echo "<br/><img alt='imagem' id='fotoPerfil' src='$imagem' style='heigth:100px; width:150px; border-radius:300px; margin-left:30px;' />";
+                session_start();
+                if( isset($_SESSION['nome']))
+                {
+                   echo "Olá ".$_SESSION['nome'].", seja bem-vindo(a)!<br/>";
+               }
+              
             ?>
-                
-           
-                
-                
+              
+            <br/><img alt='imagem' id='fotoPerfil' src="<?php echo $_SESSION['imagem'];?>" style='heigth:100px; width:150px; border-radius:300px; margin-left:30px;'/>
+              
             <div id="principal">
             
-                <form method="POST" enctype="multipart/form-data" action="feed.php"> 
+                <form method="POST" enctype="multipart/form-data" action="createPostagem.php"> 
                     <br><br><br><br><br><br>
                     Faça aqui suas postagens:<br><br>
                     Título:
@@ -59,18 +58,13 @@
                     Comentário:
                     <br><textarea name="comentario" rows="10" cols="50"></textarea><br>
                     <br/><br/>
-                    Inserir imagem do livro:
-                    <br><input type='hidden' name='MAX_SIZE_FILE' value='100000000000'/>
-                        <input type='file' name='arquivo'id="arquivo" /> <br/><br/>
-                    <br/><br/>
                     <input type="submit" value="Adicionar"/></br>
-                </form>
-                       
+                </form> 
             </div>
             
                 <footer>
-                    <?php echo "Você acessou como $nome."; ?> 
-		    <p>Copyright &copy; MackOnline 2014</p>
+                    <?php echo "Você acessou como.".$_SESSION['nome']; ?> 
+		    Copyright &copy; MackOnline 2014
 		</footer>
 	
 	</body>

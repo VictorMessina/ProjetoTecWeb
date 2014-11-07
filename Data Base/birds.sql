@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 05-Nov-2014 às 21:09
+-- Generation Time: 07-Nov-2014 às 02:52
 -- Versão do servidor: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -29,8 +29,13 @@ SET time_zone = "+00:00";
 CREATE TABLE IF NOT EXISTS `post` (
 `id_post` int(11) NOT NULL,
   `id_usuario` int(11) NOT NULL,
-  `post` varchar(400) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `titulo` text NOT NULL,
+  `autor` text NOT NULL,
+  `editora` text NOT NULL,
+  `curso` text NOT NULL,
+  `preco` text NOT NULL,
+  `comentario` text NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 -- --------------------------------------------------------
 
@@ -49,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `usuarios` (
   `data` date NOT NULL,
   `senha` varchar(50) NOT NULL,
   `foto` varchar(255) NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
 
 --
 -- Indexes for dumped tables
@@ -75,12 +80,12 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `post`
 --
 ALTER TABLE `post`
-MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id_post` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -13,7 +13,8 @@
 		
 	</head>
 
-    <body>    
+    <body>
+        <?php session_start();?>
 	<nav>
             <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/>
         </nav>     
@@ -21,7 +22,9 @@
         <header>
             <?php include 'menu.php';?>
         </header>
-		
+        
+         <br/><img alt='imagem' id='fotoPerfil' src="<?php echo $_SESSION['imagem'];?>" style='heigth:100px; width:150px; border-radius:300px; margin-left:30px;'/>
+
         <div id="principal">
             <section>
                 <h1>Contato</h1><br/>
@@ -51,7 +54,8 @@
 		<br/>
                 
         <footer>
-	    <p>Copyright &copy; The North's Birds 2014</p>
+            <?php echo "Você acessou como ".$_SESSION['nome']."."; ?> 
+	    Copyright &copy; The North's Birds 2014
 	</footer>
 	
     </body>

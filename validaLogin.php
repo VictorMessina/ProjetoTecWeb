@@ -1,26 +1,47 @@
 <?php
+    $salvar = false;
+    if(isset($_POST['salvar']))
+    {
+            $salvar = true;
+    }
 
-session_start();
+     $email = mysql_escape_string($_POST['email']);
+     $senha =  mysql_escape_string($_POST['senha']);
+     
+    session_start();
+    
+    $_SESSION['email'] = $email;
+
+    if($salvar)
+    {
+            setcookie("email", $email, time()+(60*60*24*30));
+            setcookie("senha", $senha, time()+(60*60*24*30));
+    } else{
+            setcookie("usuario", "", time()+(60*60*24*30));
+            setcookie("senha", "", time()+(60*60*24*30));
+    }
 
 include 'conectaDB.php';
 
- $email = mysql_escape_string($_POST['email']);
- $senha =  mysql_escape_string($_POST['senha']);
  
-  //2. Criar e executar a query SQL
 	$sql = "SELECT * FROM usuarios WHERE email='$email'";
 	$resp = mysqli_query ($conexao , $sql);
-	
-	//3. Exibir os resultados
+        
 	if($resp)
 	{
 		while ($registro = mysqli_fetch_array($resp))
 		{
-			$nome = $registro['nome'];
-			$imagem = $registro['foto'];
 			if ($senha == $registro['senha'])
 			{
-				header("Location: perfil.php?nome=$nome&imagem=$imagem");
+                                $id_usuario = $registro['id_usuario'];
+                                $nome = $registro['nome'];
+                                $imagem = $registro['foto'];
+                                
+                                $_SESSION['id_usuario'] = $id_usuario;
+                                $_SESSION['nome'] = $nome;
+                                $_SESSION['imagem'] = $imagem;
+                                
+				header("Location: perfil.php?");
                                 die();
 			}
 			else
@@ -31,6 +52,5 @@ include 'conectaDB.php';
 		}
 	} 
 	
-	//4. Fechar conexão
 	mysqli_close($conexao);
 ?>

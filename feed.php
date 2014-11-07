@@ -1,6 +1,8 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="pt-br">       
 	<head>
+                <link rel="shortcut icon" type="image/x-icon" href="imagensSite/logo.png"/>
 		<title>Feed</title>
 		<meta charset="utf-8"/>
 		<meta name="descripition" content="feed"/>
@@ -13,7 +15,7 @@
 	<body>
             
             <nav>			
-			<img alt='titulo' src='imagensSite/titulo.png' id='titulo' />
+		<img alt='titulo' src='imagensSite/titulo.png' id='titulo' />
 	    </nav>
             
             <header>
@@ -21,39 +23,37 @@
             </header>
             
             <div>
-			<?php
-				session_start();
-				
-				echo "<br/>";				
-				echo "Olá ".$_SESSION['nome'].", seja bem-vindo(a)!<br/>";
-			?>
-            
-                <br/><img alt='imagem' id='fotoPerfil' src="<?php echo $_SESSION['imagem']; ?>"/>
-				<form action ='createPostagem.php' method='POST' id='excecao'>
-				<p>Post:<p/><textarea name='post' rows='10' cols='50' maxlength='500'></textarea>
-				<p><input type='submit' value='publicar'/></p>
-				</form>
-                
-                <?php
-                    
-                        echo "<h3>". $nome=$_GET['nome']; "</h3>";
-                        echo "<h3>Curso: ". $_POST['curso']; "</h3>";
-                        echo "<h3>Título: ". $_POST['titulo']; "</h3>";
-                        echo "<h3>Autor: ". $_POST['autor']; "</h3>";
-                        echo "<h3>Editora: ". $_POST['editora']; "</h3>";
-                        echo "<h3>Preço: ". $_POST['preco']; "</h3>";
-                        echo "<h3>". $_POST['comentario']; "</h3>";
-                        
-                        $imagem=$_GET['imagem'];
-                        echo "<br/><img alt='imagem' id='fotoLivro' src='$imagem' style='heigth:100px; width:150px; border-radius:10px; margin-left:30px;' />";
-                        
-                    ?>
-                
+            <br/><img alt='imagem' id='fotoPerfil' src="<?php echo $_SESSION['imagem'];?>" style='heigth:100px; width:150px; border-radius:300px; margin-left:30px;'/>    
+                <?php			
+
+                    $id_usuario = $_SESSION['id_usuario'];
+
+                    include "conectaDB.php";
+
+                    $sql = "SELECT * FROM post WHERE id_usuario = '$id_usuario'";
+                    $resp = mysqli_query ($conexao , $sql);
+
+                    if ($resp){
+                            while ($registro = mysqli_fetch_array($resp)){
+                                    echo "post: ".$id_post = $registro['id_post']."</br></hr></br>";
+                                    echo "titulo:<br/>".$registro['titulo']."</br></hr></br>";
+                                    echo "autor:<br/>".$registro['autor']."</br></hr></br>";
+                                    echo "editora:<br/>".$registro['editora']."</br></hr></br>";
+                                    echo "curso:<br/>".$registro['curso']."</br></hr></br>";
+                                    echo "preço:<br/>".$registro['preco']."</br></hr></br>";
+                                    echo "comentario:<br/>".$registro['comentario']."</br></hr></br>";
+                            }
+                    }
+
+                    mysqli_close($conexao);	
+
+                ?>
+             
                 </div>
   
             <footer>
             <?php echo "Você acessou como ".$_SESSION['nome']."."; ?> 
-	        <p>Copyright &copy; MackOnline 2014</p>
+	       Copyright &copy; MackOnline 2014
 	    </footer>
 	</body>
 </html>
