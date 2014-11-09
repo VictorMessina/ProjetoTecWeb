@@ -80,9 +80,9 @@
                         ?>
             </div>
                 
-                <footer>
-		    <p>Copyright &copy; MackOnline 2014</p>
-		</footer>
+            <footer>
+	        </br><p id="textFotter">Copyright &copy; The North's Birds 2014</p>
+	    </footer>
 	
 	</body>
 	

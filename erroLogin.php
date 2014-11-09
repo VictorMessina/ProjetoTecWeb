@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Erro Login</title>
-                <link rel="shortcut icon" type="image/x-icon" href="imagensSite/logo.png"/>
-		<meta charset="utf-8">
-                <meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
-                <link rel="stylesheet" type="text/css" href="css/erroLogin.css"/>
+	    <title>Erro Login</title>
+            <link rel="shortcut icon" type="image/x-icon" href="imagensSite/logo.png"/>
+	    <meta charset="utf-8">
+            <meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
+            <link rel="stylesheet" type="text/css" href="css/erroLogin.css"/>
 	</head>
+        
         <body>
-       <?php include 'conectaDB.php';?>
-            <nav>
-                <img alt="titulo" src="imagensSite/titulo.png" id='titulo'/> 
-             	<?php          
-                    echo "<form action = 'validaLogin.php' method = 'post'>    
-                        <input type='text' placeholder='E-mail' name='email' /> 
-                        <input type='password' placeholder='Senha' name='senha'/>
-                        <input type='submit' value='Entrar'/>
-                    </form>";
-                ?>
-            </nav>  
+        
+            <?php include 'conectaDB.php';?>
+            
+            <nav></nav>  
                                 
             <div>
                 <h1> Email ou senha inválidos, volte e digite suas informações corretamente</h1>
@@ -26,8 +20,8 @@
             </div>
                         
             <footer>
-                <p>Copyright &copy; MackOnline 2014</p>
-            </footer>
+	        </br><p id="textFotter">Copyright &copy; The North's Birds 2014</p>
+	    </footer>
            
         </body>
 </html>

@@ -33,29 +33,31 @@
                     
                 }
             ?>
-            <nav>			  
+            
+            <nav>
                 <table>
                     <tr>
                         <td>
-                            <img alt='titulo' src='imagensSite/titulo.png' id='titulo' onclick= "javascript:window.location.href='index.php'"/>
-                         </td>
-                            <td>
-                                <form action = 'validaLogin.php' method = 'post'>    
+                            <form action = 'validaLogin.php' method = 'post'>    
                                 Email:<input type='text' placeholder='E-mail' name='email' required /> 
                                 Senha:<input type='password' placeholder='Senha' name='senha' required />
-                                <input type='submit' value='Entrar'/>
-                                <p>Desejo salvar meus dados <input name='salvar' type='checkbox' />
-                                </form>
-                            </td>
+                                <input type='submit' value='Entrar' id="entrar"/>
+                                <br/><br/>
+                                <input name='salvar' type='checkbox' /> <p id="salvar"> Desejo salvar meus dados  </p>
+                            </form>
+                        </td>
                     </tr>
                 </table>
-            </nav>
+            </nav> 
+            
 		<div>
                     <img alt="birds" src="imagensSite/birds.gif" id='birds'/>
-                    <h1>Parabéns pelo cadastro! Faça seu login!</h1>
+                    <h1>Parabéns pelo cadastro!</h1></br>
+                    <h2>Faça seu login!</h2>
 		</div>
-		<footer>
-	        <p>Copyright &copy; MackOnline 2014</p>
+	    
+            <footer>
+	        </br><p id="textFotter">Copyright &copy; The North's Birds 2014</p>
 	    </footer>
 	</body>
 </html>
