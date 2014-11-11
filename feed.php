@@ -32,19 +32,22 @@
 
                             if ($resp){
                                 while ($registro = mysqli_fetch_array($resp)){
-                                    echo "post: ".$id_post = $registro['id_post']."</br></hr></br>";
-                                    echo "titulo:<br/>".$registro['titulo']."</br></hr></br>";
-                                    echo "autor:<br/>".$registro['autor']."</br></hr></br>";
-                                    echo "editora:<br/>".$registro['editora']."</br></hr></br>";
-                                    echo "curso:<br/>".$registro['curso']."</br></hr></br>";
-                                    echo "preço:<br/>".$registro['preco']."</br></hr></br>";
-                                    echo "comentario:<br/>".$registro['comentario']."</br></hr></br>";
+                                    echo "<table border='1' style='width:500px; height:300px; margin-top:50px;' id='meio_feed'>";
+                                    echo "<tr><td colspan='5' style='background-color:#e9eaed;'>Post: ".$id_post = $registro['id_post']."</br></hr></br></td></tr>";
+                                    echo "<tr><td>Título:<br/>".$registro['titulo']."</br></hr></br></td>";
+                                    echo "<td>Autor:<br/>".$registro['autor']."</br></hr></br></td>";
+                                    echo "<td>Editora:<br/>".$registro['editora']."</br></hr></br></td>";
+                                    echo "<td>Curso:<br/>".$registro['curso']."</br></hr></br></td>";
+                                    echo "<td>Preço:<br/>".$registro['preco']."</br></hr></br></td></tr>";
+                                    echo "<tr><td colspan='5' style='background-color:#e9eaed;'>Comentario:<br/>".$registro['comentario']."</br></hr></br></td></tr>";
+                                    echo "</table>";
                                 }
                             }
                             mysqli_close($conexao);	
                         ?>
             
-                   </section
+                       <a href="perfil.php" ><img alt="voltar" style="margin-top: 180px;" src="imagensSite/voltar.png"/></a>
+                   </section>
             </div>    
             </br>  
             

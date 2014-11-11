@@ -33,7 +33,7 @@
                     
                     <form method="POST" enctype="multipart/form-data" action="createPostagem.php"> 
                         <br><br>
-                        Faça aqui suas postagens:<br><br>
+                        <h4>Faça aqui suas postagens:<br><br>
                         Título:
                         <br><textarea name="titulo" rows="1" cols="50"></textarea><br>
                         <br/><br/>
@@ -51,7 +51,7 @@
                         <br/><br/>
                         Comentário:
                         <br><textarea name="comentario" rows="10" cols="50"></textarea><br>
-                        <br/><br/>
+                        <br/><br/></h4>
                         <input type="submit" value="Adicionar" id="adicionar"/></br>
                     </form> 
                                 

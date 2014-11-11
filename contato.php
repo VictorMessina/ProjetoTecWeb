@@ -33,7 +33,7 @@
                     <br/><br/>
                     
                     <form name="form1" method="post" onsubmit="return validaDados()">
-                        Nome: <input type="text" placeholder="Nome" name="nome" required/><br/><br/>
+                        <h3>Nome: <input type="text" placeholder="Nome" name="nome" required/><br/><br/>
                         Email: <input type="email" placeholder="Email" name="email" required/><br/><br/> 
                     <br/>Escreva um comentário:<br/><textarea name="mensagem" rows="10" cols="50" id="mensagem"></textarea><br/><br/>
                     <br/>Dê uma nota de 0 a 5:<br/>
@@ -43,7 +43,7 @@
                         <input type="radio" name="nota" value="3"/>3<br/>
                         <input type="radio" name="nota" value="4"/>4<br/>
                         <input type="radio" name="nota" value="5" checked />5<br/><br/>
-                        <input type="submit" value="Enviar"/><br/>
+                        <input type="submit" value="Enviar" id="enviar"/><br/></h3>
                     </form>
                 
                     <img alt="volta" src="imagensSite/voltar.png" id='voltar_contato'onclick= "javascript:window.location.href='perfil.php'"/> 
