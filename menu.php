@@ -25,7 +25,7 @@
                         <li><a href='perfil.php'>Perfil</a></li>
                         <li><a href='sobre.php'>Quem somos</a></li>
                         <li><a href='contato.php'>Contato</a></li>
-                        <li><a href='logout.php'><img alt='sair' src='imagensSite/sair.png'> </a></li> 
+                        <li><a href='confirmaLogout.php'>Sair</a></li> 
                         <img alt='titulo' src='imagensSite/titulo.png' id='titulo' > 
                 </div>"
 ?>
