@@ -17,7 +17,8 @@
                     $curso = $_POST['curso'];
                     $sexo = $_POST['sexo'];
                     $data = $ano = $_POST['ano']."-".$mes = $_POST['mes']."-".$_POST['dia'];
-                    $senha = $_POST ['senha'];
+                    $senha = $_POST ['senha']; 
+                    $senha2= md5($senha);
                     $arquivo = $_FILES['arquivo'];
 					
                     $tamanho_maximo = $_POST['MAX_SIZE_FILE'];
@@ -86,7 +87,7 @@
                     
                     include "conectaDB.php";
 
-                    $sql = "INSERT INTO usuarios(nome, tia, sobrenome, email, curso, sexo , data, senha, foto) VALUES('$nome', '$tia', '$sobrenome', '$email', '$curso', '$sexo', '$data', '$senha', '$destino')";
+                    $sql = "INSERT INTO usuarios(nome, tia, sobrenome, email, curso, sexo , data, senha, foto) VALUES('$nome', '$tia', '$sobrenome', '$email', '$curso', '$sexo', '$data', '$senha2', '$destino')";
                     $resultado = mysqli_query($conexao, $sql);
 
                     if($resultado)

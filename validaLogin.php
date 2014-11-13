@@ -6,7 +6,7 @@
     }
 
      $email = mysql_escape_string($_POST['email']);
-     $senha =  mysql_escape_string($_POST['senha']);
+     $senha =  md5(mysql_escape_string($_POST['senha']));
      
     session_start();
     
