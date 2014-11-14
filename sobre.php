@@ -17,6 +17,13 @@
             <nav id="navCorrigida">
               <?php include 'menu.php';?>
             </nav>
+        
+            <?php
+                    if(!$_SESSION['nome']) {
+                       header("location: erroLogin.php");
+                       die();
+                    }
+            ?>
             
             <div id="principal">
                 

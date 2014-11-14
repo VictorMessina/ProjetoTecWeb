@@ -13,6 +13,13 @@
 	</head>
         
 	<body>
+            
+            <?php
+                    if(!$_SESSION['nome']) {
+                       header("location: erroLogin.php");
+                       die();
+                    }
+                ?>
                                     
             <nav  id="navCorrigida">
               <?php include 'menu.php';?>

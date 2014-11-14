@@ -19,7 +19,13 @@
               <?php include 'menu.php';?>
             </nav>
             
-            
+            <?php
+                    if(!$_SESSION['nome']) {
+                       header("location: erroLogin.php");
+                       die();
+                    }
+             ?>
+        
             <div id="principal">
                 
                 <br/><img alt='imagem' id='fotoPerfil' src="<?php echo $_SESSION['imagem'];?>" />

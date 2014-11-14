@@ -27,6 +27,14 @@
                 }
                 ?>
                
+                <?php
+
+                    if(!$_SESSION['nome']) {
+                       header("location: erroLogin.php");
+                       die();
+                    }
+                ?>
+                
                 <br/><img alt='imagem' id='fotoPerfil' src="<?php echo $_SESSION['imagem'];?>" />
                 
                 <section id="meio_perfil">

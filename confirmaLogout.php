@@ -18,10 +18,18 @@
               <?php include 'menu.php';?>
             </nav>
             
+            <?php
+                    if(!$_SESSION['nome']) {
+                       header("location: erroLogin.php");
+                       die();
+                    }
+             ?>
+            
             <div id="principal">
                 <section id="meio">
+                    <h3> Você deseja sair?</h3>
                     <img style="margin-top: 100px;" alt="sair" src="imagensSite/sair.png" onclick= "javascript:window.location.href='logout.php'"/>
-                    <input type="submit" value="Cancelar" onclick= "javascript:window.location.href='feed.php'"/>
+                    <img style="margin-top: 100px;" alt="cancelar" src="imagensSite/cancelar.png" onclick= "javascript:window.location.href='feed.php'"/>
                 </section>
             </div>
             
