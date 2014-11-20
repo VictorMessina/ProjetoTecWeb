@@ -6,7 +6,7 @@
 	    <meta charset="utf-8"/>
 	    <meta name="descripition" content="Logout"/>
 	    <meta name="author" content="Bianca, Carol, Marcelo, Victor"/>
-	    <link rel="stylesheet" type="text/css" href="css/visual.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/confirmaLogout.css"/>
             <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
             <script type="text/javascript" src="validadorCamposContato.js"></script>
             <script src="menu.js"></script>
@@ -18,18 +18,20 @@
               <?php include 'menu.php';?>
             </nav>
             
-            <?php
+             <?php
                     if(!$_SESSION['nome']) {
                        header("location: erroLogin.php");
                        die();
                     }
              ?>
             
+            
             <div id="principal">
                 <section id="meio">
-                    <h3> Você deseja sair?</h3>
-                    <img style="margin-top: 100px;" alt="sair" src="imagensSite/sair.png" onclick= "javascript:window.location.href='logout.php'"/>
-                    <img style="margin-top: 100px;" alt="cancelar" src="imagensSite/cancelar.png" onclick= "javascript:window.location.href='feed.php'"/>
+                    </br></br></br></br></br></br></br></br>
+                    <p id="sair"> Você deseja sair?</p>
+                    <img style="margin-top: 50px;" alt="sair" src="imagensSite/sair.png" onclick= "javascript:window.location.href='logout.php'" id="botao1"/>
+                    <img style="margin-top: 50px;" alt="cancelar" src="imagensSite/cancelar.png" onclick= "javascript:window.location.href='feed.php'" id="botao2"/>
                 </section>
             </div>
             
