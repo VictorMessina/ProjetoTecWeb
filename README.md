@@ -7,5 +7,5 @@ Equipe:
 * Victor Messina
 * Caroline Sacco
 * Bianca Weber
-* Marcelo Baronian
+* Marcelo Oliveira
 
